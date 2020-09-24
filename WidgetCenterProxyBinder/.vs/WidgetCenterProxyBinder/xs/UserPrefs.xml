@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="WidgetCenterProxyBinder/ApiDefinitions.cs">
+    <Files>
+      <File FileName="WidgetCenterProxyBinder/ApiDefinitions.cs" Line="11" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WidgetCenterProxyBinder" expanded="True">
+            <Node name="WidgetCenterProxyBinder" expanded="True">
+              <Node name="NativeReferenceFolder" expanded="True">
+                <Node name="NativeReference" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
