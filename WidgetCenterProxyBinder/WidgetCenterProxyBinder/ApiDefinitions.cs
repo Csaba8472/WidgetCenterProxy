@@ -6,36 +6,38 @@ using ObjCRuntime;
 namespace Binding
 {
 	// @interface WidgetCenterProxy : NSObject
-	[BaseType(typeof(NSObject))]
+	[iOS (14,0)]
+	[BaseType (typeof(NSObject))]
 	interface WidgetCenterProxy
 	{
 		// -(void)reloadTimeLinesOfKind:(NSString * _Nonnull)ofKind;
-		[Export("reloadTimeLinesOfKind:")]
-		void ReloadTimeLinesOfKind(string ofKind);
+		[Export ("reloadTimeLinesOfKind:")]
+		void ReloadTimeLinesOfKind (string ofKind);
 
 		// -(void)reloadAllTimeLines;
-		[Export("reloadAllTimeLines")]
-		void ReloadAllTimeLines();
+		[Export ("reloadAllTimeLines")]
+		void ReloadAllTimeLines ();
 
 		// -(void)getCurrentConfigurationsWithCompletion:(void (^ _Nonnull)(NSArray<WidgetInfoProxy *> * _Nonnull))completion;
-		[Export("getCurrentConfigurationsWithCompletion:")]
-		void GetCurrentConfigurationsWithCompletion(Action<NSArray<WidgetInfoProxy>> completion);
+		[Export ("getCurrentConfigurationsWithCompletion:")]
+		void GetCurrentConfigurationsWithCompletion (Action<NSArray<WidgetInfoProxy>> completion);
 	}
 
 	// @interface WidgetInfoProxy : NSObject
-	[BaseType(typeof(NSObject))]
+	[iOS (14,0)]
+	[BaseType (typeof(NSObject))]
 	interface WidgetInfoProxy : INativeObject
 	{
 		// @property (copy, nonatomic) NSString * _Nonnull kind;
-		[Export("kind")]
+		[Export ("kind")]
 		string Kind { get; set; }
 
 		// @property (nonatomic) NSInteger family;
-		[Export("family")]
+		[Export ("family")]
 		nint Family { get; set; }
 
 		// @property (nonatomic, strong) INIntent * _Nullable configuration;
-		[NullAllowed, Export("configuration", ArgumentSemantic.Strong)]
+		[NullAllowed, Export ("configuration", ArgumentSemantic.Strong)]
 		INIntent Configuration { get; set; }
 	}
 }

@@ -9,6 +9,7 @@ import Foundation
 import WidgetKit
 import Intents
 
+@available(iOS 14.0, *)
 @objc(WidgetCenterProxy)
 public class WidgetCenterProxy : NSObject {
     
