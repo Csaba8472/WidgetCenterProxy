@@ -27,7 +27,7 @@ lipo -info "$SWIFT_BUILD_PATH/Release-fat/$SWIFT_PROJECT_NAME.framework/$SWIFT_P
 
 echo "Copy fat frameworks to the output folder"
 rm -Rf "$SWIFT_OUTPUT_PATH"
-mkdir "$SWIFT_OUTPUT_PATH"
+mkdir -p "$SWIFT_OUTPUT_PATH"
 cp -Rf "$SWIFT_BUILD_PATH/Release-fat/$SWIFT_PROJECT_NAME.framework" "$SWIFT_OUTPUT_PATH"
 
 echo "Generating binding api definition and structs"
